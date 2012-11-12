@@ -4,5 +4,30 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+    
+    <property>
+        <name>fs.default.name</name>
+        <value>somnode1:9000</value>
+    </property>
+
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>somnode1:9001</value>
+    </property>
+
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+    <property>
+        <name>dfs.name.dir</name>
+        <value>/home/hadoop/core/namenode_data</value>
+    </property>
+
+    <property>
+        <name>dfs.data.dir</name>
+        <value>/home/hadoop/core/hdfs_slave_data</value>
+    </property>
 
 </configuration>
